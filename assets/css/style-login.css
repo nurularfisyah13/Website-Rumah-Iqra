@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(27, 163, 57);
+}
+
+.float-left {
+    float: left;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.bg-light {
+    background-color: #fefefe;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.page-login {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid;
+    background-image: linear-gradient(#184e68, #57ca85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+.box-header {
+    padding: 16px;
+    border-bottom: 1px solid #dddddd;
+    background-color: #21b6a8;
+    border-radius: 20px;
+}
+
+.box-body {
+    padding: 16px;
+}
+
+.box-footer {
+    border-top: 1px solid #ddd;
+    background-color: #f2f2f2;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+form {
+    margin: 15px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group .input-control {
+    padding: 10px 16px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+.box-login {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.btn {
+    border: 1px solid #dddd;
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #90ee90;
+    border-radius: 50px;
+    width: 100%;
+    box-shadow: 0 20px 25px -5px rgba(0 0 0 / .10), 0 10px 10px -5px rgba(0 0 0 / .04);
+}
+
+.btn-blue {
+    background-color: #2E8BC0;
+    color: #ffff;
+    border: 1px solid #2E8BC0;
+}
+
+.btn-blue:hover {
+    background-color: #145da0;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.alert {
+    padding: 10px 16px;
+    border: 1px solid;
+}
+
+.alert-error {
+    background-color: #fabec0;
+    border: 1px solid #e43d40;
+    color: #e43d40;
+}
+
+.alert-succes {
+    background-color: #a3ebb1;
+    border: 1px solid #116530;
+    color: #116530;
+}

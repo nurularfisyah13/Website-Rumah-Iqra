@@ -1,0 +1,73 @@
+Studi Kasus : Website Rumah Iqra
+
+Pengguna : 1. USER
+           2. SUPER ADMIN
+           3. ADMIN
+
+STRUKTUR DATABASE
+--------------------------------------------------------------------
+#Database : db_iqra
+
+#Pengguna
+==========================================
+1. id 		| INT (11) PRIMARY KEY AUTO INCREMENT
+2. nama 	| VARCHAR (30)
+3. username 	| VARCHAR (30)
+4. password 	| VARCHAR (50)
+5. level	| ENUM ('Super Admin','Admin')
+6. created_at	| TIMESTAMP
+7. updated_at 	| DATETIME NULL
+
+#Pengaturan
+1. id 		| INT (11) PRIMARY KEY AUTO INCREMENT
+2. nama 	| VARCHAR (30)
+3. email	| VARCHAR (50)
+4. telepon 	| VARCHAR (20)
+5. alamat 	| TEXT
+6. logo 	| VARCHAR (50)
+7. favicon 	| VARCHAR (50)
+8. tentang	| TEXT
+9. foto_iqra	| VARCHAR (50)
+10. lokasi	| TEXT
+11. created_at 	| TIMESTAMP
+12. updated_at 	| DATETIME NULL
+
+#Informasi 
+1. id 		| INT (11) PRIMARY KEY AUTO INCREMENT
+2. judul 	| VARCHAR (100)
+3. keterangan 	| TEXT
+4. created_at 	| TIMESTAMP
+5. updated_at 	| DATETIME NULL
+
+#Galeri
+1. id 		| INT (11) PRIMARY KEY AUTO INCREMENT
+2. foto 	| VARCHAR (50)
+3. keterangan	| VARCHAR (50)
+4. created_at 	| TIMESTAMP
+5. updated_at 	| DATETIME NULL
+
+
+MENU
+----------------------------------------------------------------------------
+1. User : - Home
+	  - Tentang Rumah Iqra
+	  - Galeri 
+          - Informasi
+          - Contact
+
+2. Super Admin : - Login
+	  	 - Dashboard
+	  	 - Data Pengguna (create, read, update, delete) 
+          	 - Ubah Password
+          	 - Keluar
+
+3. Admin : - Login
+	   - Dashboard
+	   - Data Galeri (create, read, update, delete)
+           - Data Informasi (create, read, update, delete)
+           - Tentang Rumah Iqra
+           - Ubah Password
+           - Keluar
+
+
+
